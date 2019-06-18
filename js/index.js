@@ -74,3 +74,13 @@ ctaButton.textConent = siteContent.cta.button;
 
 //top content
 
+let topContentH4 = document.querySelectorAll('.top-content h4');
+
+topContentH4[0].textContent = siteContent["main-content"]["features-h4"];
+topContentH4[1].textContent = siteContent["main-content"]["about-h4"];
+
+let topContentP = document.querySelector('.top-content p');
+
+topContentP[0].textContent = siteContent["main-content"]["features-content"];
+topContentP[1].textContent = siteContent["main-content"]["about-content"];
+
