@@ -41,4 +41,36 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-a[0].textContent = "Featured";
+//setting nav buttons
+// const navItem = document.querySelector('nav');
+// navItem.forEach(function(elem){
+//   elem.style.color = "blue";
+//     });
+
+document.getElementbyID("middle-img");
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+//Nav Bar
+
+let nav = document.querySelector('nav');
+let anchorTag = document.querySelector('a');
+
+anchorTag[0].textContent = 'Services';
+anchorTag[1].textContent = 'Product';
+anchorTag[2].textContent = 'Vision';
+anchorTag[3].textContent = 'Features';
+anchorTag[4].textContent = 'About';
+anchorTag[5].textContent = 'Contact';
+
+anchorTag.forEach(anchorTag => (anchorTag.style.color = "Green"));
+
+//CTA
+
+let ctaH1 = document.querySelector('.cta h1');
+
+ctaH1.textContent = siteContent.cta.h1;
+
+ctaButton.textConent = siteContent.cta.button;
+
+//top content
+
