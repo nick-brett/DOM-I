@@ -40,3 +40,54 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+
+let middleImg = document.getElementById("middle-img");
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+//Nav Bar
+
+const nav = document.querySelectorAll('nav');
+const anchorTag = document.querySelectorAll('a');
+
+// let newAnchor = document.createNewElement('a');
+// let nav = document.querySelector('nav');
+// let anchorTag = document.querySelector('a');
+
+anchorTag[0].textContent = 'Services';
+anchorTag[1].textContent = 'Product';
+anchorTag[2].textContent = 'Vision';
+anchorTag[3].textContent = 'Features';
+anchorTag[4].textContent = 'About';
+anchorTag[5].textContent = 'Contact';
+
+// anchorTag.forEach(anchorTag => (anchorTag.style.color = "Green"));
+
+// //setting nav buttons
+const navItem = document.querySelectorAll('nav a');
+navItem.forEach(function(elem){
+  elem.style.color = "blue";
+    });
+
+// //CTA
+
+let ctaH1 = document.querySelector('.cta h1');
+let ctaButton = document.querySelector('.cta button');
+let ctaImg = document.querySelector('.cta img');
+ctaImg.src = "img/header-img.png";
+ctaH1.textContent = siteContent.cta.h1;
+
+ctaButton.textContent = siteContent.cta.button;
+
+// //top content
+
+let topContentH4 = document.querySelectorAll('.top-content h4');
+
+topContentH4[0].textContent = siteContent["main-content"]["features-h4"];
+topContentH4[1].textContent = siteContent["main-content"]["about-h4"];
+
+let topContentP = document.querySelectorAll('.top-content p');
+
+topContentP[0].textContent = siteContent["main-content"]["features-content"];
+topContentP[1].textContent = siteContent["main-content"]["about-content"];
